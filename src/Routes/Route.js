@@ -51,33 +51,33 @@ export const router = createBrowserRouter([
                 {
                     path: '/reviewcheck',
                     element: <Fake></Fake>,
-                    loader: () => fetch('http://localhost:5000/reviews?id')
+                    loader: () => fetch('https://n-beta-coral.vercel.app/reviews?id')
                 },
                 // .................
                 {
                     path: '/service6',
                     element: <Service6></Service6>,
-                    loader: () => fetch('http://localhost:5000/service6')
+                    loader: () => fetch('https://n-beta-coral.vercel.app/service6')
                 },
                 {
                     path: '/reviews',
                     element: <Reviews></Reviews>,
-                    // loader: () => fetch('http://localhost:5000/courses')
+                    // loader: () => fetch('https://n-beta-coral.vercel.app/courses')
                 },
                 // {
                 //     path: '/service3/:id',
                 //     element: <ServiceDetails></ServiceDetails>,
-                //     loader: ({ params }) => fetch(`http://localhost:5000/service3/${params.id}`)
+                //     loader: ({ params }) => fetch(`https://n-beta-coral.vercel.app/service3/${params.id}`)
                 // },
                 {
                     path: '/service6/3/:id',
                     element: <ServiceDetails></ServiceDetails>,
-                    loader: ({ params }) => fetch(`http://localhost:5000/service6/3/${params.id}`)
+                    loader: ({ params }) => fetch(`https://n-beta-coral.vercel.app/service6/3/${params.id}`)
                 },
                 {
                     path: '/service6/:id',
                     element: <ServiceDetails></ServiceDetails>,
-                    loader: ({ params }) => fetch(`http://localhost:5000/service6/${params.id}`)
+                    loader: ({ params }) => fetch(`https://n-beta-coral.vercel.app/service6/${params.id}`)
                 },
                 {
                     path: '/*',

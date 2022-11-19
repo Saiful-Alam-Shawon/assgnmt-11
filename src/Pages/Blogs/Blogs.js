@@ -7,7 +7,7 @@ const Blogs = () => {
     // useEffect(() => 
 
     useEffect(() => {
-        fetch('http://localhost:5000/blog')
+        fetch('https://n-beta-coral.vercel.app/blog')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])

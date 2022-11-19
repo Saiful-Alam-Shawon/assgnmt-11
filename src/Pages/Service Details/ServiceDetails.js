@@ -10,10 +10,10 @@ const ServiceDetails = () => {
     const userEmail = user?.email;
     // console.log(email1);
 
-    // http://localhost:5000/review?id=636a5fb43a9ee93c0315068a
+    // https://n-beta-coral.vercel.app/review?id=636a5fb43a9ee93c0315068a
 
     useEffect(() => {
-        fetch(`http://localhost:5000/review?id=${_id}`)
+        fetch(`https://n-beta-coral.vercel.app/review?id=${_id}`)
             .then(res => res.json())
             .then(data => setShowreviews(data))
         // .then(data => console.log(data))
@@ -48,7 +48,7 @@ const ServiceDetails = () => {
     //     //     }
     //     //     // console.log(name, photo, number, email, reviewObject.id, message);
 
-    //     //     fetch('http://localhost:5000/reviews', {
+    //     //     fetch('https://n-beta-coral.vercel.app/reviews', {
     //     //         method: 'POST',
     //     //         headers: {
     //     //             'content-type': 'application/json'
@@ -93,7 +93,7 @@ const ServiceDetails = () => {
         }
         // console.log(name, photo, number, email, reviewObject.id, message);
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://n-beta-coral.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

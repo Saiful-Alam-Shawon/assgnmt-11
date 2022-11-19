@@ -8,11 +8,11 @@ import Services from '../Service/Services/Services';
 const Home = () => {
     const [service3, setService3] = useState([]);
 
-    // http://localhost:5000/service6/3
-    // http://localhost:5000/service3
+    // https://n-beta-coral.vercel.app/service6/3
+    // https://n-beta-coral.vercel.app/service3
 
     useEffect(() => {
-        fetch('http://localhost:5000/service6/3')
+        fetch('https://n-beta-coral.vercel.app/service6/3')
             .then(res => res.json())
             .then(data => setService3(data))
     }, [])

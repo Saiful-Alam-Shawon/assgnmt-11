@@ -11,7 +11,7 @@ const Reviews = () => {
     console.log(user?.email);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+        fetch(`https://n-beta-coral.vercel.app/reviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
         // .then(data => console.log(data))
@@ -22,7 +22,7 @@ const Reviews = () => {
     const handledelet = id => {
         const proceed = window.confirm('Are you sure?? Delet !!');
         if (proceed) {
-            fetch(`http://localhost:5000/review/${id}`, {
+            fetch(`https://n-beta-coral.vercel.app/review/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
